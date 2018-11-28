@@ -1,0 +1,13 @@
+1. What is a node module?
+
+A module is just a file of code that does ONE thing. You can access this file by importing/exporting it to other parts of your program. It makes debugging easy, as well as convenient for programmers because sometimes modules are already created for you.
+
+2. Exports vs. module.exports
+
+If you use `exports`, it is basically a convenience variable to write less code. It is not returned by require(), unlike module.exports.
+
+If you use module.exports it returns an object from `require()`. It is empty by default but can be reassigned to many things. 
+
+3. Why is `exports` the recommended option?
+
+Because module.exports returns a specific object type, it is not needed unless you want that functionality. 
